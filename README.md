@@ -7,6 +7,7 @@ For	parallel	version	the	file	resides	in	the	CPU	side and	CPU	is	responsible	for
 After	all	process	done,	the	final	formed	hidden	message	should	be	available	in	CPU	
 side	and	write	to	the	output	file	named	decoded.txt	as	a	one	line	of	massage.  
 
+Each	line	the	next	character	after	commas	are	the	secret	message	characters.(Decoding Rule)	
 For	simplicity,	in	the	input	file,	each	line	will	be	100	characters	long,	there	will	be	
 exactly	4	commas	per	line,	commas	will	not	be	the	last	character	and	there	will	be	
 15360 lines	in	the	encodedfile.txt.
