@@ -1,13 +1,15 @@
 This repository can be a good start for GPU programming.  
-(İf you don't have a GPU you can use TESLA P100 or K80 on Google cloud)
+(If you don't have a GPU you can use TESLA P100 or K80 on Google cloud)
 
 decode.cu is parallel programs written in C (cuda) for decode the encode.txt. decode.cu processes	the decoding stage both in serial	on	CPU	and	parallel on CUDA. 
+
+Each	line	the	next	character	after	commas	are	the	secret	message	characters(Decoding Rule).
 
 For	parallel	version	the	file	resides	in	the	CPU	side and	CPU	is	responsible	for	reading	the	file	and	sending the	lines	and	inputs	to	GPU.	
 After	all	process	done,	the	final	formed	hidden	message	should	be	available	in	CPU	
 side	and	write	to	the	output	file	named	decoded.txt	as	a	one	line	of	massage.  
 
-Each	line	the	next	character	after	commas	are	the	secret	message	characters.(Decoding Rule)	
+	
 For	simplicity,	in	the	input	file,	each	line	will	be	100	characters	long,	there	will	be	
 exactly	4	commas	per	line,	commas	will	not	be	the	last	character	and	there	will	be	
 15360 lines	in	the	encodedfile.txt.
